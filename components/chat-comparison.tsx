@@ -25,7 +25,7 @@ const ChatComparison: React.FC = () => {
     // Initial recipient message for both chats
     const initialMessage: Message = {
       id: 0,
-      text: "Hola, ¿en qué puedo ayudarte?",
+      text: "Hello, how can I help you?",
       timestamp: new Date(),
       sender: "recipient",
     }
@@ -40,19 +40,19 @@ const ChatComparison: React.FC = () => {
 
     // Bad example - multiple fragmented messages
     const badMessageTexts = [
-      "Hola",
-      "Tengo una pregunta",
-      "sobre el proyecto",
-      "que estamos haciendo",
-      "¿puedes decirme",
-      "cuándo es la fecha límite?",
-      "y también",
-      "necesito saber si tenemos que incluir gráficos",
+      "Hello",
+      "I have a question",
+      "about the project",
+      "we are doing",
+      "can you tell me",
+      "when is the deadline?",
+      "and also",
+      "I need to know if we have to include graphics",
     ]
 
     // Good example - one complete message
     const goodMessageText =
-      "Hola! Tengo una pregunta sobre el proyecto que estamos haciendo. ¿Puedes decirme cuándo es la fecha límite? También necesito saber si tenemos que incluir gráficos. Gracias!"
+      "Hello! I have a question about the project we are doing. Can you tell me when the deadline is? Also, I need to know if we have to include graphics. Thanks!"
 
     // Add fragmented messages with delays
     badMessageTexts.forEach((text, index) => {
@@ -92,7 +92,7 @@ const ChatComparison: React.FC = () => {
           ...prev,
           {
             id: badMessageTexts.length + 1,
-            text: "Dame un momento para verificar toda esta información...",
+            text: "Give me a moment to verify all this information...",
             timestamp: new Date(),
             sender: "recipient",
           },
@@ -106,7 +106,7 @@ const ChatComparison: React.FC = () => {
         ...prev,
         {
           id: 2,
-          text: "La fecha límite es el 15 de octubre y sí, necesitamos incluir gráficos. ¡Gracias por tu mensaje claro y completo!",
+          text: "The deadline is October 15 and yes, we need to include graphics. Thank you for your clear and complete message!",
           timestamp: new Date(),
           sender: "recipient",
         },
@@ -138,12 +138,12 @@ const ChatComparison: React.FC = () => {
 
   return (
     <div className="mb-8">
-      <h2 className="text-2xl font-semibold mb-4">Comparación</h2>
+      <h2 className="text-2xl font-semibold mb-4">Comparison</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* Bad example */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden border border-[#EF4444]">
-          <div className="bg-[#EF4444] text-white p-3 font-medium">Así NO ❌</div>
+          <div className="bg-[#EF4444] text-white p-3 font-medium">Not like this ❌</div>
           <div ref={badChatRef} className="h-80 overflow-y-auto p-4 flex flex-col space-y-2">
             {badMessages.map((message) => (
               <div
@@ -164,7 +164,7 @@ const ChatComparison: React.FC = () => {
 
         {/* Good example */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden border border-[#10B981]">
-          <div className="bg-[#10B981] text-white p-3 font-medium">Así SÍ ✅</div>
+          <div className="bg-[#10B981] text-white p-3 font-medium">Like this ✅</div>
           <div ref={goodChatRef} className="h-80 overflow-y-auto p-4 flex flex-col space-y-2">
             {goodMessages.map((message) => (
               <div
@@ -193,7 +193,7 @@ const ChatComparison: React.FC = () => {
             isPlaying ? "bg-gray-300 text-gray-600 cursor-not-allowed" : "bg-[#3B82F6] text-white hover:bg-blue-600",
           )}
         >
-          {isPlaying ? "Reproduciendo..." : "Reproducir demostración"}
+          {isPlaying ? "Playing..." : "Play demo"}
         </button>
       </div>
     </div>

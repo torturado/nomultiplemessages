@@ -11,9 +11,9 @@ export default function Home() {
         <header className="flex justify-between items-center mb-8">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-[#3B82F6] mb-2">
-              Por favor, no envíes mensajes fragmentados
+              Please, don't send fragmented messages
             </h1>
-            <p className="text-xl md:text-2xl text-gray-600">Una guía para comunicaciones más efectivas</p>
+            <p className="text-xl md:text-2xl text-gray-600">A guide to more effective communication</p>
           </div>
           <div className="hidden md:block">
             <NoMultipleMessagesLogo className="w-20 h-20" />
@@ -23,15 +23,15 @@ export default function Home() {
         <main>
           <section className="mb-16">
             <div className="bg-white rounded-lg shadow-md p-6 mb-8">
-              <h2 className="text-2xl font-semibold mb-4">¿Por qué enviar un mensaje completo?</h2>
+              <h2 className="text-2xl font-semibold mb-4">Why send a complete message?</h2>
               <p className="mb-4">
-                Enviar múltiples mensajes cortos en rápida sucesión crea una experiencia estresante para el receptor.
-                Cada nuevo mensaje genera una notificación, interrumpe el flujo de trabajo y dificulta seguir la
-                conversación.
+                Sending multiple short messages in quick succession creates a stressful experience for the recipient.
+                Each new message generates a notification, interrupts the workflow and makes it difficult to follow the
+                conversation.
               </p>
               <p>
-                En lugar de eso, tómate un momento para organizar tus pensamientos en un solo mensaje completo. Esto
-                respeta el tiempo del receptor y hace que la comunicación sea más efectiva.
+                Instead, take a moment to organize your thoughts into a single complete message. This
+                respects the time of the recipient and makes communication more effective.
               </p>
             </div>
 
@@ -41,18 +41,18 @@ export default function Home() {
           <BenefitsSection />
 
           <section className="bg-white rounded-lg shadow-md p-6 mb-16">
-            <h2 className="text-2xl font-semibold mb-4">Comparte este mensaje</h2>
+            <h2 className="text-2xl font-semibold mb-4">Share this message</h2>
             <p className="mb-6">
-              ¿Conoces a alguien que envía mensajes fragmentados? Comparte esta página con ellos de forma amable.
+              Do you know someone who sends fragmented messages? Share this page with them in a friendly way.
             </p>
             <div className="flex flex-wrap gap-4">
               <Button className="flex items-center gap-2 bg-[#3B82F6]">
                 <Copy size={18} />
-                Copiar enlace
+                Copy link
               </Button>
               <Button variant="outline" className="flex items-center gap-2">
                 <Share2 size={18} />
-                Compartir
+                Share
               </Button>
             </div>
           </section>
@@ -60,7 +60,7 @@ export default function Home() {
 
         <footer className="text-center text-gray-500 text-sm">
           <p className="mb-2">
-            Inspirado por{" "}
+            Inspired in{" "}
             <a
               href="https://nohello.net"
               target="_blank"
@@ -70,7 +70,7 @@ export default function Home() {
               nohello.net
             </a>
           </p>
-          <p>&copy; {new Date().getFullYear()} nomultiplemessages.com</p>
+          <p>&copy; {new Date().getFullYear()} torturado.github.io/nomultiplemessages</p>
         </footer>
       </div>
     </div>

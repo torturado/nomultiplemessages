@@ -12,7 +12,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/nombre-de-tu-repo' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/nomultiplemessages' : '',
   trailingSlash: true,
 };
 

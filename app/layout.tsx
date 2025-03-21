@@ -7,8 +7,8 @@ import { ThemeProvider } from "@/components/theme-provider"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "No Multiple Messages - Una guía para comunicaciones más efectivas",
-  description: "Por favor, no envíes mensajes fragmentados. Aprende a comunicarte de manera más efectiva.",
+  title: "No Multiple Messages - A guide to more effective communication",
+  description: "Please, don't send fragmented messages. Learn how to communicate more effectively.",
     generator: 'v0.dev'
 }
 
